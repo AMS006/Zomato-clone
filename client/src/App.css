@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-padding-top: 190px;
+    /* overflow-x: hidden; */
+}
+.mySwiper .swiper-button-next, .mySwiper .swiper-button-prev,
+.posterSwiper .swiper-button-next, .posterSwiper .swiper-button-prev{
+    background: white;
+    color: black;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    top:45%;
+}
+.active{
+    transition: all .3s ease;
+    color: rgb(239, 79, 95);
+    border-right: 3px solid rgb(239, 79, 95);
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 237, 239));
+}
+.posterSwiper .swiper-button-next, .posterSwiper .swiper-button-prev{
+    top:55% !important;
+}
+.mySwiper .swiper-button-next,
+.posterSwiper .swiper-button-next{
+    right:0px
+}
+.mySwiper .swiper-button-prev,
+.posterSwiper .swiper-button-prev{
+    left:0px;
+}
+
+.mySwiper .swiper-button-next::after,.mySwiper .swiper-button-prev::after,
+.posterSwiper .swiper-button-next::after,.posterSwiper .swiper-button-prev::after{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.removeScroll::-webkit-scrollbar{
+   width: 0;
+   
+}
+#viewerBackdrop{
+    background-color: rgb(27, 27, 27);
+}
+.hrTransition{
+    border-bottom: 2px solid red;
+    animation-name: example;
+    animation-duration: 0.4s;
+  }
+  
+  @keyframes example {
+    from {transform:scaleX(0)}
+    to {width:scaleX(100)}
+  }
+
+
+.styles-module_wrapper__1I_qj{
+    z-index: 99 !important;
+}
+.MuiAccordionDetails-root{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}

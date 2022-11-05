@@ -1,0 +1,15 @@
+.deliveryComponent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:1.25rem
+}
+@media (min-width:1024px) {
+    .deliveryComponent{
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .deliveryComponent{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
